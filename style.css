@@ -285,10 +285,12 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
 
 /* ===== RESPONSIVE — MOBILE ===== */
 @media(max-width:720px){
-  .nav-online-badge{display:none;}
+  .nav-online-badge{display:flex;padding:6px 12px;font-size:11px;border-radius:999px;}
+  .badge-icon{font-size:13px;}
+  .badge-text{font-size:11px;font-weight:700;}
   .nav-top-strip{padding:8px 12px;font-size:10px;justify-content:center;text-align:center;}
   .nav-top-strip a{justify-content:center;width:100%;}
-  .nav{padding:12px 14px;}
+  .nav{padding:12px 14px;gap:10px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;}
   .brand{gap:6px;min-width:0;}
   .brand-mark{font-size:22px;flex-shrink:0;}
   .brand-text{font-size:13px;line-height:1.1;white-space:normal;word-break:break-word;}
@@ -354,6 +356,9 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
 }
 
 @media(max-width:400px){
+  .nav-online-badge{padding:5px 10px;font-size:10px;}
+  .badge-icon{font-size:12px;}
+  .badge-text{font-size:10px;}
   .hero-copy h1{font-size:24px;}
   .brand-text{font-size:11px;}
   .brand-mark{font-size:20px;}
